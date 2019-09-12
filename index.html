@@ -24,8 +24,20 @@
         <p> eMail
             <input required placeholder="Tu mail" type="email" name="eMail"></p>
 
-            <input type="submit">
+        <p> Fecha de nacimiento
+            <input required type="date" name="nacimiento"></p>
         
+        <p> Web
+            <input type="url" name="url"></p>        
+            
+        <p> Adjuntar archivo
+            <input type="file" name="archivo"></p>        
+                    
+        <p> Comentarios
+            <textarea rows="10" cols="50" placeholder="Comentarios..." name="text area"></textarea></p>        
+                        
+                <input type="submit">
+                        
     </form>
 
     <form action="/contacto" method="POST">
@@ -45,5 +57,43 @@
 
     </form>
 
+    <form action="/contacto">
+
+        <p> Acepta terminos y condiciones</p>
+        <p><input checked type="radio" name="terminos">SI</p>
+        <p><input type="radio" name="terminos">NO</p>
+
+        <input type="submit">
+
+    </form>
+
+    <form action="/contacto">
+
+        <p> Seleccione que mascotas tiene en su casa:</p>
+        <p><input type="checkbox" name="mascota" value="dog">perro</p>
+        <p><input type="checkbox" name="mascota" value="cat">gato</p>
+        <p><input type="checkbox" name="mascota" value="bird">pajarito</p>
+        <p><input type="checkbox" name="mascota" value="others">otros</p>
+
+        <input type="submit">
+
+    </form>
+
+    <form>
+
+        <p>Dispositivo
+            
+            <select multiple name="dispositivo">
+            
+                <option>PC</option>
+                <option>Notebook</option>
+                <option>Tablet</option>
+                <option>Smartphone</option>
+
+            </select>
+        
+        </p>
+    
+    </form>
 </body>
 </html>
