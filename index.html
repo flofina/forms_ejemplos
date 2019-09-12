@@ -11,43 +11,37 @@
 
 <body>
 
+    <h1>CUESTIONARIO SIN SENTIDO</h1>
+    
     <form action="/contacto">
 
         <fieldset>
 
             <legend>Datos Personales</legend>
 
-            <label>Nombre</label>
-                <input placeholder="Tu nombre" type="text" name="nombre">
-            </br>
+            <p><label>Nombre</label>
+                <input placeholder="Tu nombre" type="text" name="nombre"></p>
+            
+            <p><label>Apellido</label>
+                <input placeholder="Tu apellido" type="text" name="apellido"></p>
+            
+            <p><label>Edad</label>
+                <input placeholder="Tu edad" type="number" name="edad"></p>
+            
+            <p><label>eMail</label>
+                <input required placeholder="Tu mail" type="email" name="eMail"></p>
+            
+            <p><label>Fecha de nacimiento</label>
+                <input required type="date" name="nacimiento"></p>
 
-            <label>Apellido</label>
-                <input placeholder="Tu apellido" type="text" name="apellido">
-            </br>
+            <p><label>Web</label>
+                <input type="url" name="url"></p>
 
-            <label>Edad</label>
-                <input placeholder="Tu edad" type="number" name="edad">
-            </br>
+            <p><label>Adjuntar archivo</label>
+                <input type="file" name="archivo"></p>
 
-            <label>eMail</label>
-                <input required placeholder="Tu mail" type="email" name="eMail">
-            </br>
-
-            <label>Fecha de nacimiento</label>
-                <input required type="date" name="nacimiento">
-            </br>
-
-            <label>Web</label>
-                <input type="url" name="url">
-            </br>
-
-            <label>Adjuntar archivo</label>
-                <input type="file" name="archivo">
-            </br>
-
-            <label>Comentarios</label>
-                <textarea rows="10" cols="50" placeholder="Comentarios..." name="text area"></textarea>
-            </br>
+            <p><label>Comentarios</label>
+                <textarea rows="10" cols="50" placeholder="Comentarios..." name="text area"></textarea></p>
 
             <input type="submit">
 
@@ -61,17 +55,14 @@
 
             <legend>Iniciar sesion</legend>
 
-            <label>Usuario</label>
-                <input required maxlength="8" placeholder="hasta 8 caracteres" type="text" name="nombre">
-            </br>
+            <p><label>Usuario</label>
+                <input required maxlength="8" placeholder="hasta 8 caracteres" type="text" name="nombre"></p>
 
-            <label>eMail</label>
-                <input required placeholder="Tu mail" type="email" name="eMail">
-            </br>
+            <p><label>eMail</label>
+                <input required placeholder="Tu mail" type="email" name="eMail"></p>
 
-            <label>Contrasenia</label>
-                <input required placeholder="Tu contrasenia" type="password" name="contrasenia">
-            </br>
+            <p><label>Contrasenia</label>
+                <input required placeholder="Tu contrasenia" type="password" name="contrasenia"></p>
 
             <input type="submit" value="Enviar form">
 
@@ -87,10 +78,10 @@
 
             <legend>Terminos y condiciones</legend>
 
-            <label>Acepta terminos y condiciones</label>
+            <p><label>Acepta terminos y condiciones</label>
 
                 <input checked type="radio" name="terminos">SI
-                <input type="radio" name="terminos">NO
+                <input type="radio" name="terminos">NO</p>
 
             <input type="submit">
 
@@ -104,20 +95,12 @@
 
             <legend>Mascotas</legend>
 
-            <label>Seleccione que mascotas tiene en su casa:</label>
-            </br>
+            <p><label>Seleccione que mascotas tiene en su casa:</label></p>
                 
-                <input type="checkbox" name="mascota" value="dog">perro
-            </br>
-                
-                <input type="checkbox" name="mascota" value="cat">gato
-            </br>
-                
-                <input type="checkbox" name="mascota" value="bird">pajarito
-            </br>
-                
-                <input type="checkbox" name="mascota" value="others">otros
-            </br>
+            <p><input type="checkbox" name="mascota" value="dog">perro</p>
+            <p><input type="checkbox" name="mascota" value="cat">gato</p>
+            <p><input type="checkbox" name="mascota" value="bird">pajarito</p>
+            <p><input type="checkbox" name="mascota" value="others">otros</p>
 
             <input type="submit">
 
@@ -131,7 +114,7 @@
 
             <legend>Dispositivos</legend>
 
-            <label>Dispositivo
+            <p><label>Dispositivo
 
                 <select multiple name="dispositivo">
 
@@ -142,7 +125,7 @@
 
                 </select>
 
-            </label>
+            </label></p>
 
         </fieldset>
 
