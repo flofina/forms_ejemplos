@@ -7,7 +7,43 @@
     <link rel="stylesheet" href="style.css">
     <title>forms</title>
 </head>
+
 <body>
-    
+
+    <form action="/contacto">
+
+        <p> Nombre
+            <input placeholder="Tu nombre" type="text" name="nombre"></p>
+
+        <p> Apellido
+            <input placeholder="Tu apellido" type="text" name="apellido"></p>
+
+        <p> Edad
+            <input placeholder="Tu edad" type="number" name="edad"></p>
+
+        <p> eMail
+            <input required placeholder="Tu mail" type="email" name="eMail"></p>
+
+            <input type="submit">
+        
+    </form>
+
+    <form action="/contacto" method="POST">
+
+        <p> Usuario
+            <input required maxlength="8" placeholder="hasta 8 caracteres" type="text" name="nombre"></p>
+
+        <p> eMail
+            <input required placeholder="Tu mail" type="email" name="eMail"></p>
+
+        <p> Contrasenia
+            <input required placeholder="Tu contrasenia" type="password" name="contrasenia"></p>
+
+            <input type="submit" value="Enviar form">
+
+            <button>apreta este boton</button>
+
+    </form>
+
 </body>
 </html>
