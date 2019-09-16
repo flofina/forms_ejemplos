@@ -12,124 +12,132 @@
 <body>
 
     <h1>CUESTIONARIO SIN SENTIDO</h1>
-    
-    <form action="/contacto">
 
-        <fieldset>
+    <div>
 
-            <legend>Datos Personales</legend>
+        <form action="/contacto">
 
-            <p><label>Nombre</label>
-                <input placeholder="Tu nombre" type="text" name="nombre"></p>
-            
-            <p><label>Apellido</label>
-                <input placeholder="Tu apellido" type="text" name="apellido"></p>
-            
-            <p><label>Edad</label>
-                <input placeholder="Tu edad" type="number" name="edad"></p>
-            
-            <p><label>eMail</label>
-                <input required placeholder="Tu mail" type="email" name="eMail"></p>
-            
-            <p><label>Fecha de nacimiento</label>
-                <input required type="date" name="nacimiento"></p>
+            <fieldset>
 
-            <p><label>Web</label>
-                <input type="url" name="url"></p>
+                <legend>DATOS PERSONALES</legend>
 
-            <p><label>Adjuntar archivo</label>
-                <input type="file" name="archivo"></p>
+                <p><label>Nombre</label>
+                    <input placeholder="Tu nombre" type="text" name="nombre"></p>
 
-            <p><label>Comentarios</label>
-                <textarea rows="10" cols="50" placeholder="Comentarios..." name="text area"></textarea></p>
+                <p><label>Apellido</label>
+                    <input placeholder="Tu apellido" type="text" name="apellido"></p>
 
-            <input type="submit">
+                <p><label>Edad</label>
+                    <input placeholder="Tu edad" type="number" name="edad"></p>
 
-        </fieldset>
+                <p><label>eMail</label>
+                    <input required placeholder="Tu mail" type="email" name="eMail"></p>
 
-    </form>
+                <p><label>Fecha de nacimiento</label>
+                    <input required type="date" name="nacimiento"></p>
 
-    <form action="/contacto" method="POST">
+                <p><label>Web</label>
+                    <input placeholder="http://..." type="url" name="url"></p>
 
-        <fieldset>
+                <p><label>Adjuntar archivo</label>
+                    <input type="file" name="archivo"></p>
 
-            <legend>Iniciar sesion</legend>
+                <p><label>Comentarios</label>
+                    <textarea rows="10" cols="50" placeholder="Comentarios..." name="text area"></textarea></p>
 
-            <p><label>Usuario</label>
-                <input required maxlength="8" placeholder="hasta 8 caracteres" type="text" name="nombre"></p>
+                <input type="submit">
 
-            <p><label>eMail</label>
-                <input required placeholder="Tu mail" type="email" name="eMail"></p>
+            </fieldset>
 
-            <p><label>Contrasenia</label>
-                <input required placeholder="Tu contrasenia" type="password" name="contrasenia"></p>
+        </form>
 
-            <input type="submit" value="Enviar form">
+        <form action="/contacto">
 
-            <button>apreta este boton</button>
+            <fieldset>
 
-        </fieldset>
+                <legend>TERMINOS Y CONDICIONES</legend>
 
-    </form>
+                <p><label>Acepta terminos y condiciones</label>
 
-    <form action="/contacto">
+                    <input checked type="radio" name="terminos">SI
+                    <input type="radio" name="terminos">NO</p>
 
-        <fieldset>
+                <input type="submit">
 
-            <legend>Terminos y condiciones</legend>
+            </fieldset>
 
-            <p><label>Acepta terminos y condiciones</label>
+        </form>
 
-                <input checked type="radio" name="terminos">SI
-                <input type="radio" name="terminos">NO</p>
+    </div>
 
-            <input type="submit">
+    <div>
 
-        </fieldset>
+        <form action="/contacto" method="POST">
 
-    </form>
+            <fieldset>
 
-    <form action="/contacto">
+                <legend>INICIAR SESION</legend>
 
-        <fieldset>
+                <p><label>Usuario</label>
+                    <input required maxlength="8" placeholder="hasta 8 caracteres" type="text" name="nombre"></p>
 
-            <legend>Mascotas</legend>
+                <p><label>eMail</label>
+                    <input required placeholder="Tu mail" type="email" name="eMail"></p>
 
-            <p><label>Seleccione que mascotas tiene en su casa:</label></p>
-                
-            <p><input type="checkbox" name="mascota" value="dog">perro</p>
-            <p><input type="checkbox" name="mascota" value="cat">gato</p>
-            <p><input type="checkbox" name="mascota" value="bird">pajarito</p>
-            <p><input type="checkbox" name="mascota" value="others">otros</p>
+                <p><label>Contrasenia</label>
+                    <input required placeholder="Tu contrasenia" type="password" name="contrasenia"></p>
 
-            <input type="submit">
+                <input type="submit" value="Enviar form">
 
-        </fieldset>
+                <button>apreta este boton</button>
 
-    </form>
+            </fieldset>
 
-    <form>
+        </form>
 
-        <fieldset>
+        <form action="/contacto">
 
-            <legend>Dispositivos</legend>
+            <fieldset>
 
-            <p><label>Dispositivo
+                <legend>MASCOTAS</legend>
 
-                <select multiple name="dispositivo">
+                <p><label>Seleccione que mascotas tiene en su casa:</label></p>
 
-                    <option>PC</option>
-                    <option>Notebook</option>
-                    <option>Tablet</option>
-                    <option>Smartphone</option>
+                <p><input type="checkbox" name="mascota" value="dog">perro</p>
+                <p><input type="checkbox" name="mascota" value="cat">gato</p>
+                <p><input type="checkbox" name="mascota" value="bird">pajarito</p>
+                <p><input type="checkbox" name="mascota" value="others">otros</p>
 
-                </select>
+                <input type="submit">
 
-            </label></p>
+            </fieldset>
 
-        </fieldset>
+        </form>
 
-    </form>
+        <form>
+
+            <fieldset>
+
+                <legend>DISPOSITIVOS</legend>
+
+                <p><label>Dispositivo
+
+                        <select multiple name="dispositivo">
+
+                            <option>PC</option>
+                            <option>Notebook</option>
+                            <option>Tablet</option>
+                            <option>Smartphone</option>
+
+                        </select>
+
+                    </label></p>
+
+            </fieldset>
+
+        </form>
+
+    </div>
 
 </body>
 

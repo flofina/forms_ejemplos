@@ -7,10 +7,16 @@ h1 {
     text-align: center;
 }
 
-fieldset {
+div {
+    display: inline-block;
     margin: 20px;
     padding: 10px;
-    width: 50%;
+    width: 45%;
+    vertical-align: top;
+}
+
+fieldset { 
+    margin-bottom: 20px;  
 }
 
 input {
